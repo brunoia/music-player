@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="player-border-layer">
+
+            <div class="player-bg-layer">
+
+                <input type="text" id="time"> <!--watch display-->
+
+                <img class="headphone" src="./assets/images/headphone.png" alt="Headphone icon">
+
+                <audio id="track01" src="./assets/songs/reggae.mp3"></audio>
+                <audio id="track02" src="./assets/songs/reggae2.mp3"></audio>
+                <audio id="track03" src="./assets/songs/reggae3.mp3"></audio>
+
+                <h1 id="song-title">Make Love Not War</h1>
+                <h2 id="artist">Patiño</h2>
+
+                <div class="control">
+
+                    <img class="btn" onclick="backward()" src="./assets/images/backward-solid.svg" alt="Backward song button" title="Backward">
+                    <img class="btn" onclick="previousSong(); keepbtn()" src="./assets/images/step-backward-solid.svg" alt="Previous song button" title="Previous">         
+                    <img id="play-btn" class="btn" onclick="hidebtn(); play()" src="./assets/images/play-circle-solid.svg" alt="Play button" title="Play">
+                    <img id="pause-btn" class="btn" onclick="hidebtn(); pause()" src="./assets/images/pause-circle-solid.svg" alt="Pause button" title="Pause">
+                    <img class="btn" onclick="nextSong(); keepbtn()" src="./assets/images/step-forward-solid.svg" alt="Next song button" title="Next">
+                    <img class="btn" onclick="forward()" src="./assets/images/forward-solid.svg" alt="Forward song button" title="Forward">
+            
+                </div> <!--end control-->
+
+                <div class="progress-bar">
+
+                    <div class="currentTime"></div>
+                    <input type="range" id="progressBar" min="0" max="" value="0" onchange="changeProgressBar()">
+                    <div class="durationTime"></div>
+
+                </div> <!--end progress bar-->
+
+            </div> <!--end background layer-->
+
+        </div> <!--end border layer-->
+
+        <footer>
+            <p>Developed by <a href="https://github.com/brunoia" target="_blank">Bruno Ildebrando Almeida</a>.</p>
+        </footer>
+
+    </div> <!--end container-->
+
+    <script src="./script/script.js"></script>
+
+</body>
+</html>
