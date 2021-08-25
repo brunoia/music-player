@@ -4,7 +4,8 @@ This is a side project of a music player that I did to challenge myself and put 
 
 You can check it out here: https://brunoia.github.io/music-player/
 
-![img](https://user-images.githubusercontent.com/57513606/130725027-adab6675-ebcb-4dd7-b95f-3396b065b1c2.png)
+![player](https://user-images.githubusercontent.com/57513606/130726006-c2f689cd-7498-4659-9af4-9b93bb244f2d.gif)
+
 
 
 
